@@ -87,6 +87,10 @@ a:hover {
     margin-bottom: 0;
 }
 
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
 .flex {
     display: flex;
 }
@@ -115,7 +119,7 @@ a:hover {
     min-width: 5rem;
 }
 
-.timeline div:nth-child(1) label:nth-child(1)::after {
+.timeline-vertical div:nth-child(1) label:nth-child(1)::after {
     content: '⋮';
     display: block;
 }
