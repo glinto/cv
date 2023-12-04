@@ -116,19 +116,27 @@ a:hover {
     padding: 0 1em;
 }
 
-.timeline {
+label {
+    font-family: var(--headings-font-face);
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.timeline,
+.skills {
     display: flex;
     width: 100%;
 }
 
-.timeline div:nth-child(1) {
-    font-family: var(--headings-font-face);
-    font-size: .8rem;
-    font-weight: 300;
+.timeline div:nth-child(1),
+.skills div:nth-child(1) {
     padding-right: 1rem;
-    padding-top: 0.15rem;
     width: 5rem;
     min-width: 5rem;
+}
+
+.timeline div:nth-child(1) {
+    padding-top: 0.15rem;
 }
 
 .timeline div:nth-child(1) label {
