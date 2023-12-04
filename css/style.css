@@ -119,12 +119,21 @@ a:hover {
     min-width: 5rem;
 }
 
-.timeline-vertical div:nth-child(1) label:nth-child(1)::after {
-    content: '⋮';
+.timeline div:nth-child(1) label {
+    display: table-cell;
+}
+
+.timeline div:nth-child(1) label:nth-child(1)::after {
+    content: '-';
+    display: inline-block;
+}
+
+.timeline-vertical div:nth-child(1) label {
     display: block;
 }
 
-.timeline div:nth-child(1) label:nth-child(1) {
+.timeline-vertical div:nth-child(1) label:nth-child(1)::after {
+    content: '⋮';
     display: block;
 }
 
