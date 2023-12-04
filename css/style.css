@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Poppins:wght@300;400&display=swap');
+
+
+:root {
+    --background-color: #202020;
+    --text-color: rgba(255, 255, 255, 0.67);
+    --text-color-secondary: rgba(255, 255, 255, 0.33);
+    --theme-primary: hsl(187, 97%, 58%);
+    --font-face: 'Fira Sans', sans-serif;
+    --headings-font-face: 'Poppins', sans-serif;
+    --font-size: .9em;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --background-color: #ffffff;
+        --theme-primary: hsl(187, 97%, 35%);
+        --text-color: #000;
+        --text-color-secondary: rgba(0, 0, 0, 0.33);
+    }
+}
+
+@media screen and (max-width: 672px) {
+    :root {
+        --font-size: 1em;
+    }
+}
+
+
+@media print {
+    :root {
+        --background-color: #ffffff;
+        --theme-primary: hsl(187, 97%, 35%);
+        --text-color: #000;
+        --text-color-secondary: rgba(0, 0, 0, 0.33);
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font: var(--font-size) var(--font-face);
+    margin: 0
+}
+
+p {
+    line-height: 1.15rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--headings-font-face);
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 0;
+    text-decoration: underline dotted var(--text-color-secondary) 1px;
+    text-underline-offset: .2rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+a {
+    color: var(--theme-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.app {
+    max-width: 640px;
+    padding: 0 1em;
+}
+
+.timeline {
+    display: flex;
+    width: 100%;
+}
+
+.timeline div:nth-child(1) {
+    font-family: var(--headings-font-face);
+    font-size: .8rem;
+    font-weight: 300;
+    padding-right: 1rem;
+    padding-top: 0.15rem;
+    width: 5rem;
+    min-width: 5rem;
+}
+
+.timeline div:nth-child(1) label:nth-child(1)::after {
+    content: '⋮';
+    display: block;
+}
+
+.timeline div:nth-child(1) label:nth-child(1) {
+    display: block;
+}
+
+.timeline div:nth-child(2) {
+    flex-grow: 1;
+}
