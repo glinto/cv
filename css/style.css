@@ -158,11 +158,11 @@ label {
 	display: inline-block;
 }
 
-.timeline-vertical div:nth-child(1) label {
+.timeline--vertical div:nth-child(1) label {
 	display: block;
 }
 
-.timeline-vertical div:nth-child(1) label:nth-child(1)::after {
+.timeline--vertical div:nth-child(1) label:nth-child(1)::after {
 	content: '⋮';
 	display: block;
 }
@@ -180,8 +180,11 @@ img.portrait {
 
 svg.icon {
 	height: 1rem;
-	fill: var(--text-color);
-	margin-right: 0.25rem;
+	margin-right: 0.125rem;
+}
+
+svg.icon--themed {
+	fill: var(--theme-primary);
 }
 
 span.icon {
