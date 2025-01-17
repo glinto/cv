@@ -176,6 +176,8 @@ img.portrait {
 	height: 4rem;
 	width: 4rem;
 	margin-right: 1rem;
+	/* grayscale */
+	filter: grayscale(100%);
 }
 
 svg.icon {
