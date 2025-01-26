@@ -171,6 +171,10 @@ label {
 	flex-grow: 1;
 }
 
+.timeline ul {
+	padding-left: 1rem;
+}
+
 img.portrait {
 	border-radius: 50%;
 	height: 4rem;
